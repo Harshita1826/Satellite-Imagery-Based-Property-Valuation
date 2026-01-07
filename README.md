@@ -12,13 +12,13 @@ The goal is to build a model that leverages both images and structured features 
 The workflow:
 
 1️. Download satellite images for train + test (or use pre-downloaded images, see note below)
+
 2️. Clean & preprocess tabular data
+
 3️. Build a multimodal model:
 
 - CNN → processes satellite images
-
 - Dense Network → processes tabular features
-
 - Both are merged and trained together
 
 4️. Generate final predictions and create submission.csv
@@ -27,9 +27,8 @@ The workflow:
 
 Originally, the project included two notebooks meant to download satellite images automatically:
 
-data_fetcher_train.ipynb
-
-data_fetcher_test.ipynb
+- data_fetcher_train.ipynb
+- data_fetcher_test.ipynb
 
 However, due to account / access issues:
 
@@ -38,7 +37,9 @@ I downloaded the images using another Google account and manually copied them in
 So currently:
 
 **Folder	                    What it contains**
+
 images/	                Satellite images for train.csv
+
 images_test/	          Satellite images for test2.csv
 
 The fetcher notebooks are kept in the repo because they show the intended pipeline and can still be reused if API keys/access are available.
