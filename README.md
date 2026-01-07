@@ -49,8 +49,8 @@ The fetcher notebooks are kept in the repo because they show the intended pipeli
 
 **Note: Due to GitHub size limits, folders named images/ and images_test/ are also not uploaded locally**
 
-`Download the pretrained model and the images folder from the drive link given
-**[Drive link](https://drive.google.com/drive/folders/19cQPC8beWk2Arot8iW51v3sJLtFegK8V?usp=sharing)**`
+**Download the pretrained model and the images folder from the drive link given**
+**[Drive link](https://drive.google.com/drive/folders/19cQPC8beWk2Arot8iW51v3sJLtFegK8V?usp=sharing)**
 
 ### Project Structure
 
