@@ -9,4 +9,4 @@ Deep learning + machine learning fusion
 
 The goal is to understand how environment + house features together influence price.
 
-#Project Structure
+**Project Structure**
