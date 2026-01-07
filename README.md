@@ -45,6 +45,13 @@ The fetcher notebooks are kept in the repo because they show the intended pipeli
 
 **Note: Images are not re-downloaded when running the project — they are already placed inside the folders.**
 
+**Note: Due to GitHub size limits, pretrained models are not uploaded. Run model_training.ipynb to generate final_model_multimodal.keras and final_model_rf.joblib locally.**
+
+**Note: Due to GitHub size limits, folders named images/ and images_test/ are also not uploaded locally**
+
+`Download the pretrained model and the images folder from the drive link given
+**[Drive link](https://drive.google.com/drive/folders/19cQPC8beWk2Arot8iW51v3sJLtFegK8V?usp=sharing)**`
+
 ### Project Structure
 
 CDC_Project/
