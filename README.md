@@ -79,7 +79,7 @@ The fetcher notebooks are kept in the repo because they show the intended pipeli
 
 `├── test2.csv`
 
-`└── submission.csv                  # Final predictions file`
+`└── 23113065_final.csv                  # Final predictions file`
 
 ### Models Used
 
