@@ -4,8 +4,8 @@ This project predicts property prices using:
 - Satellite Images
 - Tabular features (area, bedrooms, etc.)
 - A combined multimodal deep learning model
-- 
-###Project Overview
+
+### Project Overview
 
 The goal is to build a model that leverages both images and structured features to improve property price prediction accuracy.
 
@@ -23,7 +23,7 @@ The workflow:
 
 4️. Generate final predictions and create submission.csv
 
-###About Image Downloading
+### About Image Downloading
 
 Originally, the project included two notebooks meant to download satellite images automatically:
 
@@ -45,7 +45,7 @@ The fetcher notebooks are kept in the repo because they show the intended pipeli
 
 **Note: Images are not re-downloaded when running the project — they are already placed inside the folders.**
 
-###Project Structure
+### Project Structure
 
 CDC_Project/
 
@@ -89,7 +89,7 @@ Models Used
 
 Used for comparison and blending.
 
-###How to Run
+### How to Run
 
 1️. Install dependencies
 
@@ -121,7 +121,7 @@ This will generate:
 
 - `submission.csv`
 
-###Result
+### Result
 
 - Multimodal model performed better than tabular-only baseline
 
