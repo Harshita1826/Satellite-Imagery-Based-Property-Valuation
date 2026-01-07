@@ -43,7 +43,7 @@ images_test/	          Satellite images for test2.csv
 
 The fetcher notebooks are kept in the repo because they show the intended pipeline and can still be reused if API keys/access are available.
 
-**Note: Images are not re-downloaded when running the project — they are already placed inside the folders.**
+**Note: Images are not re-downloaded when running the project, they are already placed inside the folders.**
 
 **Note: Due to GitHub size limits, pretrained models are not uploaded. Run model_training.ipynb to generate final_model_multimodal.keras and final_model_rf.joblib locally.**
 
