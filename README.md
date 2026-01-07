@@ -1,11 +1,11 @@
-## Satellite Imagery Based Property Valuation
+# Satellite Imagery Based Property Valuation
 This project predicts property prices using:
 
 - Satellite Images
 - Tabular features (area, bedrooms, etc.)
 - A combined multimodal deep learning model
 - 
-**Project Overview**
+###Project Overview
 
 The goal is to build a model that leverages both images and structured features to improve property price prediction accuracy.
 
@@ -23,7 +23,7 @@ The workflow:
 
 4️. Generate final predictions and create submission.csv
 
-**About Image Downloading**
+###About Image Downloading
 
 Originally, the project included two notebooks meant to download satellite images automatically:
 
@@ -45,7 +45,7 @@ The fetcher notebooks are kept in the repo because they show the intended pipeli
 
 **Note: Images are not re-downloaded when running the project — they are already placed inside the folders.**
 
-**Project Structure**
+###Project Structure
 
 CDC_Project/
 
@@ -89,11 +89,11 @@ Models Used
 
 Used for comparison and blending.
 
-**How to Run**
+###How to Run
 
 1️. Install dependencies
 
-pip install tensorflow pandas numpy scikit-learn joblib matplotlib
+`pip install tensorflow pandas numpy scikit-learn joblib matplotlib`
 
 2️. Prepare satellite images
 
@@ -113,15 +113,15 @@ model_training.ipynb
 
 This will generate:
 
-- final_model_multimodal.keras
+- `final_model_multimodal.keras`
 
-- final_model_rf.joblib
+- `final_model_rf.joblib`
 
-- final_scaler.joblib
+- `final_scaler.joblib`
 
-- submission.csv
+- `submission.csv`
 
-**Results**
+###Result
 
 - Multimodal model performed better than tabular-only baseline
 
