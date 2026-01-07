@@ -54,20 +54,31 @@ The fetcher notebooks are kept in the repo because they show the intended pipeli
 
 ### Project Structure
 
-``
-CDC_Project/
-│
-├── data_fetcher_train.ipynb        # Script used to download satellite images for train.csv
-├── data_fetcher_test.ipynb         # Script used to download satellite images for test2.csv  
-├── model_training.ipynb            # Data cleaning + feature engineering + Multimodal model training
-├── final_model_multimodal.keras    # Saved CNN + Tabular model
-├── final_model_rf.joblib           # Random Forest model
-├── final_scaler.joblib             # Scaler for tabular features
-├── images/                         # TRAIN satellite images
-├── images_test/                    # TEST satellite images
-├── train.csv
-├── test2.csv
-└── submission.csv                  # Final predictions file``
+`CDC_Project/`
+
+`│`
+
+`├── data_fetcher_train.ipynb        # Script used to download satellite images for train.csv`
+
+`├── data_fetcher_test.ipynb         # Script used to download satellite images for test2.csv  `
+
+`├── model_training.ipynb            # Data cleaning + feature engineering + Multimodal model training`
+
+`├── final_model_multimodal.keras    # Saved CNN + Tabular model`
+
+`├── final_model_rf.joblib           # Random Forest model`
+
+`├── final_scaler.joblib             # Scaler for tabular features`
+
+`├── images/                         # TRAIN satellite images`
+
+`├── images_test/                    # TEST satellite images`
+
+`├── train.csv`
+
+`├── test2.csv`
+
+`└── submission.csv                  # Final predictions file`
 
 ### Models Used
 
