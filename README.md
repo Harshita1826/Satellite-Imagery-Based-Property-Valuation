@@ -54,7 +54,8 @@ The fetcher notebooks are kept in the repo because they show the intended pipeli
 
 ### Project Structure
 
-`CDC_Project/
+``
+CDC_Project/
 │
 ├── data_fetcher_train.ipynb        # Script used to download satellite images for train.csv
 ├── data_fetcher_test.ipynb         # Script used to download satellite images for test2.csv  
@@ -66,7 +67,7 @@ The fetcher notebooks are kept in the repo because they show the intended pipeli
 ├── images_test/                    # TEST satellite images
 ├── train.csv
 ├── test2.csv
-└── submission.csv                  # Final predictions file`
+└── submission.csv                  # Final predictions file``
 
 ### Models Used
 
