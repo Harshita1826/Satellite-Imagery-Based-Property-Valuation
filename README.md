@@ -1,22 +1,18 @@
 ## Satellite Imagery Based Property Valuation
-This project builds a multimodal regression system that predicts property prices by combining:
+This project predicts property prices using:
 
-Tabular housing data (sqft, bedrooms, grade, etc.)
-
-Satellite imagery (neighborhood + surroundings)
-
-Deep learning + machine learning fusion
-
-The goal is to understand how environment + house features together influence price.
-
+- Satellite Images
+- Tabular features (area, bedrooms, etc.)
+- A combined multimodal deep learning model
+- 
 **Project Overview**
 
-The goal is to build a model that uses both images and structured features to improve prediction accuracy.
+The goal is to build a model that leverages both images and structured features to improve property price prediction accuracy.
 
 The workflow:
 
-1️. Download satellite images for train + test
-2. Clean & preprocess tabular data
+1️. Download satellite images for train + test (or use pre-downloaded images, see note below)
+2️. Clean & preprocess tabular data
 3️. Build a multimodal model:
 
 - CNN → processes satellite images
@@ -25,7 +21,29 @@ The workflow:
 
 - Both are merged and trained together
 
-4. Generate final predictions and create submission.csv
+4️. Generate final predictions and create submission.csv
+
+**About Image Downloading**
+
+Originally, the project included two notebooks meant to download satellite images automatically:
+
+data_fetcher_train.ipynb
+
+data_fetcher_test.ipynb
+
+However, due to account / access issues:
+
+I downloaded the images using another Google account and manually copied them into the project folders.
+
+So currently:
+
+**Folder	                    What it contains**
+images/	                Satellite images for train.csv
+images_test/	          Satellite images for test2.csv
+
+The fetcher notebooks are kept in the repo because they show the intended pipeline and can still be reused if API keys/access are available.
+
+**Note: Images are not re-downloaded when running the project — they are already placed inside the folders.**
 
 **Project Structure**
 
@@ -56,15 +74,55 @@ training
 
 └── submission.csv                  # Final predictions file
 
+
+
 Models Used
 1️. Multimodal Deep Learning Model
 
-Input 1: (128×128×3) satellite images
+- Input 1: (128×128×3) satellite images
 
-Input 2: normalized tabular features
+- Input 2: normalized tabular features
 
-Outputs price prediction
+- Outputs price prediction
 
 2️. Random Forest (Baseline)
 
 Used for comparison and blending.
+
+**How to Run**
+
+1️. Install dependencies
+
+pip install tensorflow pandas numpy scikit-learn joblib matplotlib
+
+2️. Prepare satellite images
+
+If you don’t have images/ and images_test/, run:
+
+data_fetcher_train.ipynb
+data_fetcher_test.ipynb
+
+
+This will download images into the respective folders.
+
+If folders already exist (from manual copy), you can skip this step.
+
+3️. Train the model
+
+model_training.ipynb
+
+This will generate:
+
+- final_model_multimodal.keras
+
+- final_model_rf.joblib
+
+- final_scaler.joblib
+
+- submission.csv
+
+**Results**
+
+- Multimodal model performed better than tabular-only baseline
+
+- Satellite images helped capture neighborhood effects
