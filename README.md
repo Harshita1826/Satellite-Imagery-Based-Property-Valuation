@@ -36,11 +36,11 @@ I downloaded the images using another Google account and manually copied them in
 
 So currently:
 
-**Folder	                    What it contains**
+**Folder-------------------- What it contains**
 
-images/	                Satellite images for train.csv
+images/------------------Satellite images for train.csv
 
-images_test/	          Satellite images for test2.csv
+images_test/-------------Satellite images for test2.csv
 
 The fetcher notebooks are kept in the repo because they show the intended pipeline and can still be reused if API keys/access are available.
 
@@ -86,9 +86,7 @@ The fetcher notebooks are kept in the repo because they show the intended pipeli
 **1️. Multimodal Deep Learning Model**
 
 - Input 1: (128×128×3) satellite images
-
 - Input 2: normalized tabular features
-
 - Outputs price prediction
 
 **2️. Random Forest (Baseline)**
@@ -105,8 +103,9 @@ Used for comparison and blending.
 
 If you don’t have images/ and images_test/, run:
 
-data_fetcher_train.ipynb
-data_fetcher_test.ipynb
+`data_fetcher_train.ipynb`
+
+`data_fetcher_test.ipynb`
 
 
 This will download images into the respective folders.
@@ -126,6 +125,7 @@ This will generate:
 - `final_scaler.joblib`
 
 - `submission.csv`
+
 
 ### Result
 
