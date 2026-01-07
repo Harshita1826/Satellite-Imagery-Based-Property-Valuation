@@ -54,37 +54,23 @@ The fetcher notebooks are kept in the repo because they show the intended pipeli
 
 ### Project Structure
 
-CDC_Project/
-
+`CDC_Project/
 │
-
 ├── data_fetcher_train.ipynb        # Script used to download satellite images for train.csv
-
 ├── data_fetcher_test.ipynb         # Script used to download satellite images for test2.csv  
-
-├── model_training.ipynb            # Data cleaning + feature engineering + Multimodal model 
-training
-
+├── model_training.ipynb            # Data cleaning + feature engineering + Multimodal model training
 ├── final_model_multimodal.keras    # Saved CNN + Tabular model
-
 ├── final_model_rf.joblib           # Random Forest model
-
 ├── final_scaler.joblib             # Scaler for tabular features
-
 ├── images/                         # TRAIN satellite images
-
 ├── images_test/                    # TEST satellite images
-
 ├── train.csv
-
 ├── test2.csv
+└── submission.csv                  # Final predictions file`
 
-└── submission.csv                  # Final predictions file
+### Models Used
 
-
-
-Models Used
-1️. Multimodal Deep Learning Model
+**1️. Multimodal Deep Learning Model**
 
 - Input 1: (128×128×3) satellite images
 
@@ -92,17 +78,17 @@ Models Used
 
 - Outputs price prediction
 
-2️. Random Forest (Baseline)
+**2️. Random Forest (Baseline)**
 
 Used for comparison and blending.
 
 ### How to Run
 
-1️. Install dependencies
+**1️. Install dependencies**
 
 `pip install tensorflow pandas numpy scikit-learn joblib matplotlib`
 
-2️. Prepare satellite images
+**2️. Prepare satellite images**
 
 If you don’t have images/ and images_test/, run:
 
@@ -114,7 +100,7 @@ This will download images into the respective folders.
 
 If folders already exist (from manual copy), you can skip this step.
 
-3️. Train the model
+**3️. Train the model**
 
 model_training.ipynb
 
